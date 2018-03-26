@@ -1,12 +1,20 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #ccc;
+  background-color: #fff;
+  background-image: url('../images/pattern.png');
 }
 .container{
   max-width: 1600px;
-  background-color: #ddd;
+  margin:auto;
+  text-align: center;
 }
-header{
-  background-image: url("images/###.jpg");
+header .container{
+  padding: 40px 0;
+}
+.general_section{
+  background-image: url("../images/header.jpg");
+}
+main .container{
+  padding: 100px 0;
 }
