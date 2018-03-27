@@ -2,6 +2,14 @@
   font-family: 'Yeseva One';
   src: url('../fonts/yeseva-one/YesevaOne-Regular_v2.otf');
 }
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Medium.ttf');
+}
+@font-face {
+  font-family: 'Gentium-Basic';
+  src: url('../fonts/Gentium-Basic/GenBasB.ttf');
+}
 body{
   margin: 0;
   padding: 0;
@@ -41,6 +49,7 @@ h2{
 p{
   font-size: 16px;
   line-height: 24px;
+  font-family: 'Lato';
 }
 a{
   color: #fff;
@@ -160,6 +169,7 @@ header .container{
 .inf_block p{
   font-size: 25px;
   line-height: 45px;
+  font-family: 'Gentium-Basic';
 }
 .info_reserved{
   width: 435px;
