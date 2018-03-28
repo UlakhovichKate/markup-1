@@ -7,14 +7,14 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="navigation flex">
+      <div class="navigation">
+        <div class="container flex">
           <logo>
             <img src="images/logo.png" alt="logo" title="на главную">
           </logo>
           <nav>
             <ul class="flex">
-              <li><a href="#">home</a></li>
+              <li class="active"><a href="#">home</a></li>
               <li><a href="#">about</a></li>
               <li><a href="#">ingredients</a></li>
               <li><a href="#">menu</a></li>
@@ -28,11 +28,13 @@
             <a href="#"></a>
           </div>
         </div>
-        <div class="promo">
+      </div>
+      <div class="promo">
+        <div class="container">
           <h1>the right ingredients <br>for the right food</h1>
           <div class="buttons flex">
-            <div class="booking"><a href="#">BOOK A TABLE</a></div>
-            <div class="see_menu"><a href="#" >SEE THE MENU</a></div>
+            <div class="booking"><a href="#booking">BOOK A TABLE</a></div>
+            <div class="see_menu"><a href="#menu" >SEE THE MENU</a></div>
           </div>
         </div>
       </div>
@@ -77,10 +79,10 @@
           </div>
         </div>
       </section>
-      <section class="menu">
+      <section class="menu" id="menu">
         <div class="container flex">
           <div class="menu_theme">
-            <h2>Appetisers</h2>
+            <h2 class="gold">Appetisers</h2>
             <div class="dish_name gold flex">
               <h3>Tzatsiki</h3>
               <span>$3.99</span>
@@ -98,7 +100,20 @@
             <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
           </div>
           <div class="menu_theme">
-            <h2>Salads</h2>
+            <h2 class="gold">Starters</h2>
+            <div class="dish_name gold flex">
+              <h3>Haloumi</h3>
+              <span>$3.99</span>
+            </div>
+            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <div class="dish_name gold flex">
+              <h3>Spinach_Pie</h3>
+              <span>$5.50</span>
+            </div>
+            <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+          </div>
+          <div class="menu_theme">
+            <h2 class="gold">Salads</h2>
             <div class="dish_name gold flex">
               <h3>Olive_Special</h3>
               <span>$5.99</span>
@@ -116,20 +131,7 @@
             <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
           </div>
           <div class="menu_theme">
-            <h2>Starters</h2>
-            <div class="dish_name gold flex">
-              <h3>Haloumi</h3>
-              <span>$3.99</span>
-            </div>
-            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
-            <div class="dish_name gold flex">
-              <h3>Spinach_Pie</h3>
-              <span>$5.50</span>
-            </div>
-            <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-          </div>
-          <div class="menu_theme">
-            <h2>Main Dishes</h2>
+            <h2 class="gold">Main Dishes</h2>
             <div class="dish_name gold flex">
               <h3>Cornish_Mackerel</h3>
               <span>$5.99</span>
@@ -161,19 +163,19 @@
               – and tasted – what keeps our customers coming back for more.
                Perfect materials and freshly baked food, delicious Lambda cakes,
                  muffins, and gourmet coffees make us hard to resist! Stop
-                  in today and check us out!
-                  <br>- food inc, New York</p>
+                  in today and check us out!</p>
+                  <span>- food inc, New York</span>
           </div>
         </div>
       </section>
-      <section class="reservation">
+      <section class="reservation" id="booking">
         <div class="container flex">
           <div class="images_reserv">
             <img src="images/food2.jpg" alt="блюдо с печенью">
             <img src="images/food1.jpg" alt="десерт">
           </div>
           <div class="info_reserved">
-            <h2>Just the right food</h2>
+            <h2 class="gold">Just the right food</h2>
             <p>If you’ve been to one of our restaurants, you’ve seen –
                and tasted – what keeps our customers coming back for
                 more. Perfect materials and freshly baked food.

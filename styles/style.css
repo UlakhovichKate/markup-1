@@ -21,6 +21,7 @@ body{
   margin:auto;
   text-align: center;
   padding: 0 175px;
+  background-size: cover;
 }
 main .container{
   padding-top: 100px;
@@ -34,14 +35,51 @@ main .container{
 h1, h2, h3, p, ul{
   padding: 0;
   margin: 0;
+  font-weight: normal;
 }
 h1{
   font-size: 90px;
   font-family: 'Yeseva One';
+  line-height: 120px;
+  margin-top: 97px;
+}
+h1::after{
+  content: '';
+  width: 230px;
+  height: 43px;
+  background-image: url("../images/divider_big.png");
+  display: block;
+  margin: 23px auto 30px;
 }
 h2{
   font-size: 36px;
   font-family: 'Yeseva One';
+}
+h2::after{
+  content: '';
+  width: 230px;
+  height: 24px;
+  display: block;
+  margin: 14px auto 26px;
+}
+h2.gold::after{
+  background-image: url("../images/divider_gold.png");
+}
+.ingredients h2::after, .reviews h2::after{
+  background-image: url("../images/divider_white.png");
+}
+h3, .menu span{
+  line-height: 24px;
+  font-size: 21px;
+  font-family: 'Yeseva One';
+}
+footer h3::after{
+  content: '';
+  width: 200px;
+  height: 18px;
+  background-image: url("../images/divider_white_small.png");
+  display: block;
+  margin: 20px auto;
 }
 .gold{
   color: #cc9900;
@@ -60,27 +98,37 @@ li{
 }
 /*************************************************header */
 header .navigation{
-  padding: 40px 0;
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
 }
-header .promo{
+nav li{
+  border-top: 3px solid rgba(0,0,0,0);
+}
+header .promo .container{
   padding: 0 0 100px;
 }
 nav ul{
   width:720px;
 }
+nav li, .logo img, .sotials{
+  padding: 45px 0;
+}
 .navigation a{
+  font-family: 'Gentium-Basic';
   text-transform: capitalize;
   font-size: 21px;
 }
+nav .active, nav li:hover{
+  border-top: 3px solid #fff;
+}
 /********************************************** promo */
-header .container{
+header{
   background-image: url("../images/header.jpg");
-  background-size: cover;
   color:#fff;
+  background-size: cover;
 }
 .buttons{
-  width: 550px;
-  margin: auto;
+  width: 510px;
+  margin: 0 auto 45px;
 }
 .buttons div{
   width: 225px;
@@ -101,14 +149,17 @@ header .container{
   background-color: rgba(240,240,240,0.5);
   border: 1px solid #fff;
 }
-/************************************************/
+/************************************************ cook */
 .image_with_plate{
   width: 620px;
-  height: 620px;
+  height: 600px;
   background-image: url("../images/plate.png");
 }
 .cooker{
   width: 420px;
+}
+.cooker img{
+  margin-top: 55px;
 }
 /************************************************* ingredients */
 .ingredients .container{
@@ -134,6 +185,7 @@ header .container{
   border: 5px solid #212325;
   overflow: hidden;
   background-position: 50%;
+  margin-top: 75px;
 }
 /****************************************** menu */
 .menu{
@@ -141,9 +193,6 @@ header .container{
 }
 .menu .container{
   flex-wrap: wrap;
-}
-.menu h2{
-  color: #cc9900;
 }
 .menu_theme{
   width: 440px;
@@ -154,6 +203,12 @@ header .container{
 .dish_name{
   border-bottom: 1px solid #cc9900;
   justify-content: space-between;
+}
+.menu h3, .menu span{
+  padding: 0 0 10px;
+}
+.menu p{
+  padding: 10px 0 40px;
 }
 /******************************************* REVIEWS */
 .reviews .container{
@@ -170,17 +225,17 @@ header .container{
   font-size: 25px;
   line-height: 45px;
   font-family: 'Gentium-Basic';
+  color: #dde0df;
 }
 .info_reserved{
   width: 435px;
-}
-.info_reserved h2{
-  color: #cc9900;
 }
 form label{
   display: block;
   color: #cc9900;
   font-weight: 700;
+  margin: 30px 0 10px;
+  font-style: 'Lato';
 }
 form{
   text-align: left;
@@ -208,6 +263,11 @@ form{
   border: none;
   color: #fff;
   font-size: 16px;
+}
+.images_reserv{
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
 }
 /***********************************************footer */
 footer{
