@@ -10,6 +10,10 @@
   font-family: 'Gentium-Basic';
   src: url('../fonts/Gentium-Basic/GenBasB.ttf');
 }
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
 body{
   margin: 0;
   padding: 0;
@@ -17,15 +21,15 @@ body{
   background-image: url('../images/pattern.png');
 }
 .container{
-  max-width: 1600px;
+  max-width: 1200px;
   margin:auto;
   text-align: center;
-  padding: 0 175px;
+  padding: 0;
   background-size: cover;
 }
 main .container{
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 .flex{
   display: flex;
@@ -98,7 +102,7 @@ li{
 }
 /*************************************************header */
 header .navigation{
-  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
 }
 nav li{
   border-top: 3px solid rgba(0,0,0,0);
@@ -150,33 +154,43 @@ header{
   border: 1px solid #fff;
 }
 /************************************************ cook */
+.about .container{
+  position: relative;
+  padding-bottom: 12px;
+}
 .image_with_plate{
   width: 620px;
   height: 600px;
   background-image: url("../images/plate.png");
+  position: relative;
+  top:-20px;
 }
 .cooker{
   width: 420px;
+  position: relative;
 }
 .cooker img{
   margin-top: 55px;
+  position: relative;
+  left: 50px;
 }
 /************************************************* ingredients */
-.ingredients .container{
+.ingredients {
   background-image: url("../images/ingred.jpg");
   position: relative;
 }
 .ingredients .block{
   width:410px;
-  padding: 80px;
+  padding: 75px;
   background-color: rgba(0,0,0,0.5);
+  margin-bottom: 30px;
 }
 .ingredients p, .ingredients h2{
   color: #fff;
 }
 .block{
   position: relative;
-  left: 55%;
+  left: 50%;
 }
 .food_images div{
   width: 100px;
@@ -185,7 +199,7 @@ header{
   border: 5px solid #212325;
   overflow: hidden;
   background-position: 50%;
-  margin-top: 75px;
+  margin-top: 70px;
 }
 /****************************************** menu */
 .menu{
@@ -193,12 +207,15 @@ header{
 }
 .menu .container{
   flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 .menu_theme{
   width: 440px;
+  margin-bottom: 30px;
 }
 .menu_theme p{
   text-align: left;
+  padding: 10px 0 30px;
 }
 .dish_name{
   border-bottom: 1px solid #cc9900;
@@ -207,11 +224,8 @@ header{
 .menu h3, .menu span{
   padding: 0 0 10px;
 }
-.menu p{
-  padding: 10px 0 40px;
-}
 /******************************************* REVIEWS */
-.reviews .container{
+.reviews{
   background-image: url("../images/rew.jpg");
 }
 .inf_block{
@@ -227,15 +241,19 @@ header{
   font-family: 'Gentium-Basic';
   color: #dde0df;
 }
+/****************************************************** reserved*/
 .info_reserved{
   width: 435px;
+}
+.info_reserved p{
+  padding-bottom: 10px;
 }
 form label{
   display: block;
   color: #cc9900;
   font-weight: 700;
   margin: 30px 0 10px;
-  font-style: 'Lato';
+  font-family: 'open-sans';
 }
 form{
   text-align: left;
