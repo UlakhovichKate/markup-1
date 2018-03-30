@@ -104,6 +104,10 @@ li{
 header .navigation{
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
 }
+.logo{
+  display: flex;
+  align-items: center;
+}
 nav li{
   border-top: 3px solid rgba(0,0,0,0);
 }
@@ -113,8 +117,31 @@ header .promo .container{
 nav ul{
   width:720px;
 }
-nav li, .logo img, .sotials{
+nav li, .logo img, .sotials, .pay_cards{
   padding: 45px 0;
+}
+header .sotials{
+  width: 100px;
+}
+.sotials a, .pay_cards div{
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+header .sotials img{
+  position: relative;
+  top: -110px;
+}
+header .twitter{
+  left: -20px;
+}
+header .youtube{
+  left: -60px;
+}
+header .facebook{
+  left: -90px;
 }
 .navigation a{
   font-family: 'Gentium-Basic';
@@ -178,6 +205,7 @@ header{
 .ingredients {
   background-image: url("../images/ingred.jpg");
   position: relative;
+  background-size: cover;
 }
 .ingredients .block{
   width:410px;
@@ -220,13 +248,31 @@ header{
 .dish_name{
   border-bottom: 1px solid #cc9900;
   justify-content: space-between;
+  position: relative;
 }
 .menu h3, .menu span{
   padding: 0 0 10px;
 }
+.special{
+  border: 1px solid #cc9900;
+  padding: 5px;
+}
+.special::before{
+  content: 'Special';
+  display: block;
+  position: absolute;
+  right: -1px;
+  top:-20px;
+  background-color: #cc9900;
+  color: #fff;
+  width: 70px;
+  height: 20px;
+  font-family: 'open-sans';
+}
 /******************************************* REVIEWS */
 .reviews{
   background-image: url("../images/rew.jpg");
+  background-size: cover;
 }
 .inf_block{
   width: 620px;
@@ -255,7 +301,7 @@ form label{
   margin: 30px 0 10px;
   font-family: 'open-sans';
 }
-form{
+form .flex{
   text-align: left;
   flex-wrap: wrap;
   justify-content: space-between!important;
@@ -266,6 +312,7 @@ form{
   border: 1px solid #ccc;
   font-style: italic;
   padding-left: 15px;
+  color: #888;
 }
 .input_form select{
   width: 185px;
@@ -273,6 +320,10 @@ form{
   border: 1px solid #ccc;
   font-style: italic;
   padding-left: 15px;
+  color: #888;
+}
+.input_form input:hover, .input_form select:hover{
+  border: 1px solid #cc9900;
 }
 .button{
   width: 200px;
@@ -281,6 +332,11 @@ form{
   border: none;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.button:hover{
+  background-color: #ccc;
 }
 .images_reserv{
   width: 570px;
@@ -298,4 +354,40 @@ footer h3{
 }
 .about_us{
   max-width: 350px;
+}
+footer .sotials{
+  width: 100px;
+  margin: auto;
+}
+footer .sotials img{
+  position: relative;
+  top: -65px;
+}
+footer .facebook{
+  left: -20px;
+}
+footer .twitter{
+  left: -70px;
+}
+footer .youtube{
+  left: -43px;
+}
+footer .something_network{
+  left: -90px;
+}
+.pay_cards img{
+  position: relative;
+  top: -15px;
+}
+.card1{
+  left: -20px;
+}
+.paypal{
+  left: -52px;
+}
+.visa{
+  left: -85px;
+}
+.card4{
+  left: -115px;
 }
