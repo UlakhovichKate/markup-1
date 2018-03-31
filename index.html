@@ -6,266 +6,295 @@
       <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header>
-      <div class="navigation">
-        <div class="container flex">
-          <div class="logo">
-            <img src="images/logo.png" alt="logo" title="на главную">
-          </div>
-          <nav>
-            <ul class="flex">
-              <li class="active"><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">ingredients</a></li>
-              <li><a href="#">menu</a></li>
-              <li><a href="#">reviews</a></li>
-              <li><a href="#">reservations</a></li>
-            </ul>
-          </nav>
-          <div class="sotials flex">
-            <a href="#">
-              <img src="images/sprites.png" class="twitter" alt="twitter">
-            </a>
-            <a href="#">
-              <img src="images/sprites.png" class="youtube" alt="youtube">
-            </a>
-            <a href="#">
-              <img src="images/sprites.png" class="facebook" alt="facebook">
-            </a>
+    <div class="wrapper">
+      <header>
+        <div class="navigation">
+          <div class="container flex">
+            <div class="logo" id="logo">
+              <img src="images/logo.png" alt="logo" title="на главную">
+            </div>
+            <nav>
+              <ul class="flex">
+                <li class="active"><a href="#logo">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#ingredients">ingredients</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#reviews">reviews</a></li>
+                <li><a href="#booking">reservations</a></li>
+              </ul>
+            </nav>
+            <div class="sotials flex">
+              <a href="#">
+                <img src="images/sprites.png" class="twitter" alt="twitter">
+              </a>
+              <a href="#">
+                <img src="images/sprites.png" class="youtube" alt="youtube">
+              </a>
+              <a href="#">
+                <img src="images/sprites.png" class="facebook" alt="facebook">
+              </a>
+            </div>
           </div>
         </div>
+        <div class="promo">
+          <div class="container">
+            <h1>the right ingredients <br>for the right food</h1>
+            <div class="buttons flex">
+              <div class="booking"><a href="#booking">BOOK A TABLE</a></div>
+              <div class="see_menu"><a href="#menu" >SEE THE MENU</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="about" id="about">
+          <div class="container flex">
+            <div class="cooker">
+              <h2 class="gold">Just the right food</h2>
+              <p>If you’ve been to one of our restaurants, you’ve seen – and
+                tasted – what keeps our customers coming back for more. Perfect
+                 materials and freshly baked food, delicious Lambda cakes,
+                  muffins, and gourmet
+                coffees make us hard to resist! Stop in
+                 today and check us out!</p>
+              <img src="images/cooker.png" alt="повар">
+            </div>
+            <div class="image_with_plate">
+            </div>
+          </div>
+        </section>
+        <section class="ingredients" id="ingredients">
+          <div class="container">
+            <div class="block">
+              <h2>Fine ingredients</h2>
+              <p>If you’ve been to one of our restaurants, you’ve seen –
+                and tasted – what keeps our customers coming back for more.
+                 Perfect materials and freshly baked food, delicious Lambda cakes,
+                   muffins, and gourmet coffees make us hard to resist! Stop
+                    in today and check us out!</p>
+              <div class="food_images flex">
+                <div>
+                  <img src="images/zito.jpg" alt="рожь">
+                </div>
+                <div>
+                  <img src="images/spices.jpg" alt="специи">
+                </div>
+                <div>
+                  <img src="images/bread.jpg" alt="хлеб">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="menu" id="menu">
+          <div class="container flex">
+            <div>
+              <div class="menu_theme">
+                <h2 class="gold">Appetisers</h2>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Tzatsiki</h3>
+                    <span>$3.99</span>
+                  </div>
+                  <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Aubergine_Salad</h3>
+                    <span>$5.50</span>
+                  </div>
+                  <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Aubergine_Salad</h3>
+                    <span>$5.25</span>
+                  </div>
+                  <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+              </div>
+              <div class="menu_theme">
+                <h2 class="gold">Salads</h2>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Olive_Special</h3>
+                    <span>$5.99</span>
+                  </div>
+                  <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+                <div class="dish_all special">
+                  <div class="dish_name gold flex ">
+                    <h3>Greek_Salad</h3>
+                    <span>$5.50</span>
+                  </div>
+                  <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Gusto_Salad</h3>
+                    <span>$5.25</span>
+                  </div>
+                  <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="menu_theme">
+                <h2 class="gold">Starters</h2>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Haloumi</h3>
+                    <span>$3.99</span>
+                  </div>
+                  <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Spinach_Pie</h3>
+                    <span>$5.50</span>
+                  </div>
+                  <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+              </div>
+              <div class="menu_theme">
+                <h2 class="gold">Main Dishes</h2>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Cornish_Mackerel</h3>
+                    <span>$5.99</span>
+                  </div>
+                  <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+                <div class="dish_all special">
+                  <div class="dish_name gold flex">
+                    <h3>Roast_Lamb</h3>
+                    <span>$5.50</span>
+                  </div>
+                  <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Fried_Chicken</h3>
+                    <span>$5.25</span>
+                  </div>
+                  <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+                <div class="dish_all">
+                  <div class="dish_name gold flex">
+                    <h3>Pastitsio</h3>
+                    <span>$5.99</span>
+                  </div>
+                  <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews" id="reviews">
+          <div class="container">
+            <div class="inf_block">
+              <h2>Guest Reviews</h2>
+              <blockquote>
+                <p>If you’ve been to one of our restaurants, you’ve seen
+                – and tasted – what keeps our customers coming back for more.
+                 Perfect materials and freshly baked food, delicious Lambda cakes,
+                   muffins, and gourmet coffees make us hard to resist! Stop
+                    in today and check us out!</p>
+                <cite>- food inc, New York</cite>
+              </blockquote>
+
+            </div>
+          </div>
+        </section>
+        <section class="reservation" id="booking">
+          <div class="container flex">
+            <div class="images_reserv">
+              <img src="images/food2.jpg" alt="блюдо с печенью">
+              <img src="images/food1.jpg" alt="десерт">
+            </div>
+            <div class="info_reserved">
+              <h2 class="gold">Just the right food</h2>
+              <p>If you’ve been to one of our restaurants, you’ve seen –
+                 and tasted – what keeps our customers coming back for
+                  more. Perfect materials and freshly baked food.</p>
+              <p> Delicious Lambda cakes,  muffins, and gourmet coffees make us hard
+                  to resist! Stop in today and check us out! Perfect materials and freshly
+                   baked food.</p>
+              <form>
+                <div class="flex">
+                  <div class="input_form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="your name*" id="name" required>
+                  </div>
+                  <div class="input_form">
+                    <label for="mail">Email</label>
+                    <input type="email" name="email" placeholder="your email*" id="mail" required>
+                  </div>
+                  <div class="input_form">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" placeholder="date*" id="date">
+                  </div>
+                  <div class="input_form">
+                    <label for="party_numbers">Party number</label>
+                    <select id="party_numbers">
+                      <option value="1">party number</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+                <input type="submit" value="Book now!" class="button">
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
       </div>
-      <div class="promo">
-        <div class="container">
-          <h1>the right ingredients <br>for the right food</h1>
-          <div class="buttons flex">
-            <div class="booking"><a href="#booking">BOOK A TABLE</a></div>
-            <div class="see_menu"><a href="#menu" >SEE THE MENU</a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="about">
+      <footer>
         <div class="container flex">
-          <div class="cooker">
-            <h2 class="gold">Just the right food</h2>
-            <p>If you’ve been to one of our restaurants, you’ve seen – and
-              tasted – what keeps our customers coming back for more. Perfect
-               materials and freshly baked food, delicious Lambda cakes,
-                muffins, and gourmet
-              coffees make us hard to resist! Stop in
-               today and check us out!</p>
-            <img src="images/cooker.png" alt="повар">
+          <div class="about_us">
+            <h3>about us</h3>
+            <p>Lambda's new and expanded Chelsea location represents a truly
+              authentic Greek patisserie, featuring breakfasts of fresh croissants
+               and steaming bowls of café. <br>Lamda the best restaurant in town</p>
           </div>
-          <div class="image_with_plate">
-          </div>
-        </div>
-      </section>
-      <section class="ingredients">
-        <div class="container">
-          <div class="block">
-            <h2>Fine ingredients</h2>
-            <p>If you’ve been to one of our restaurants, you’ve seen –
-              and tasted – what keeps our customers coming back for more.
-               Perfect materials and freshly baked food, delicious Lambda cakes,
-                 muffins, and gourmet coffees make us hard to resist! Stop
-                  in today and check us out!</p>
-            <div class="food_images flex">
-              <div>
-                <img src="images/zito.jpg" alt="рожь">
-              </div>
-              <div>
-                <img src="images/spices.jpg" alt="специи">
-              </div>
-              <div>
-                <img src="images/bread.jpg" alt="хлеб">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="menu" id="menu">
-        <div class="container flex">
-          <div>
-            <div class="menu_theme">
-              <h2 class="gold">Appetisers</h2>
-              <div class="dish_name gold flex">
-                <h3>Tzatsiki</h3>
-                <span>$3.99</span>
-              </div>
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
-              <div class="dish_name gold flex">
-                <h3>Aubergine_Salad</h3>
-                <span>$5.50</span>
-              </div>
-              <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-              <div class="dish_name gold flex">
-                <h3>Aubergine_Salad</h3>
-                <span>$5.25</span>
-              </div>
-              <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-            </div>
-            <div class="menu_theme">
-              <h2 class="gold">Salads</h2>
-              <div class="dish_name gold flex">
-                <h3>Olive_Special</h3>
-                <span>$5.99</span>
-              </div>
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
-              <div class="dish_name gold flex special">
-                <h3>Greek_Salad</h3>
-                <span>$5.50</span>
-              </div>
-              <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-              <div class="dish_name gold flex">
-                <h3>Gusto_Salad</h3>
-                <span>$5.25</span>
-              </div>
-              <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-            </div>
-          </div>
-          <div>
-            <div class="menu_theme">
-              <h2 class="gold">Starters</h2>
-              <div class="dish_name gold flex">
-                <h3>Haloumi</h3>
-                <span>$3.99</span>
-              </div>
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
-              <div class="dish_name gold flex">
-                <h3>Spinach_Pie</h3>
-                <span>$5.50</span>
-              </div>
-              <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-            </div>
-            <div class="menu_theme">
-              <h2 class="gold">Main Dishes</h2>
-              <div class="dish_name gold flex">
-                <h3>Cornish_Mackerel</h3>
-                <span>$5.99</span>
-              </div>
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
-              <div class="dish_name gold flex special">
-                <h3>Roast_Lamb</h3>
-                <span>$5.50</span>
-              </div>
-              <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-              <div class="dish_name gold flex">
-                <h3>Fried_Chicken</h3>
-                <span>$5.25</span>
-              </div>
-              <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-              <div class="dish_name gold flex">
-                <h3>Pastitsio</h3>
-                <span>$5.99</span>
-              </div>
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="container">
-          <div class="inf_block">
-            <h2>Guest Reviews</h2>
-            <p>If you’ve been to one of our restaurants, you’ve seen
-              – and tasted – what keeps our customers coming back for more.
-               Perfect materials and freshly baked food, delicious Lambda cakes,
-                 muffins, and gourmet coffees make us hard to resist! Stop
-                  in today and check us out!</p>
-                  <span>- food inc, New York</span>
-          </div>
-        </div>
-      </section>
-      <section class="reservation" id="booking">
-        <div class="container flex">
-          <div class="images_reserv">
-            <img src="images/food2.jpg" alt="блюдо с печенью">
-            <img src="images/food1.jpg" alt="десерт">
-          </div>
-          <div class="info_reserved">
-            <h2 class="gold">Just the right food</h2>
-            <p>If you’ve been to one of our restaurants, you’ve seen –
-               and tasted – what keeps our customers coming back for
-                more. Perfect materials and freshly baked food.</p>
-            <p> Delicious Lambda cakes,  muffins, and gourmet coffees make us hard
-                to resist! Stop in today and check us out! Perfect materials and freshly
-                 baked food.</p>
-            <form>
-              <div class="flex">
-                <div class="input_form">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" placeholder="your name*" id="name" required>
+          <div class="opening_hours">
+            <h3>opening hours</h3>
+            <p><b>Mon-Thu:</b> 7:00am-8:00pm <br> <b>Fri-Sun:</b> 7:00am-10:00pm</p>
+            <div class="pay_cards flex">
+                <div>
+                  <img src="images/sprites.png" class="card1" alt="card1">
                 </div>
-                <div class="input_form">
-                  <label for="mail">Email</label>
-                  <input type="mail" name="mail" placeholder="your email*" id="mail" required>
+                <div>
+                  <img src="images/sprites.png" class="paypal" alt="pay_pal">
                 </div>
-                <div class="input_form">
-                  <label for="date">Date</label>
-                  <input type="date" name="date" placeholder="date*" id="date" required>
+                <div>
+                  <img src="images/sprites.png" class="visa" alt="visa">
                 </div>
-                <div class="input_form">
-                  <label for="party_numbers">Party number</label>
-                  <select id="party_numbers">
-                    <option value="1">party number</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
+                <div>
+                  <img src="images/sprites.png" class="card4" alt="card4">
                 </div>
-              </div>
-              <input type="submit" value="Book now!" class="button">
-            </form>
+            </div>
+          </div>
+          <div class="our_location">
+            <h3>our location</h3>
+            <p>19th Paradise Street Sitia <br> 128 Meserole Avenue</p>
+            <div class="sotials flex">
+              <a href="#">
+                <img src="images/sprites.png" class="facebook" alt="facebook">
+              </a>
+              <a href="#">
+                <img src="images/sprites.png" class="youtube" alt="youtube">
+              </a>
+              <a href="#">
+                <img src="images/sprites.png" class="twitter" alt="twitter">
+              </a>
+              <a href="#">
+                <img src="images/sprites.png" class="something_network" alt="something_network">
+              </a>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container flex">
-        <div class="about_us">
-          <h3>about us</h3>
-          <p>Lambda's new and expanded Chelsea location represents a truly
-            authentic Greek patisserie, featuring breakfasts of fresh croissants
-             and steaming bowls of café. <br>Lamda the best restaurant in town</p>
-        </div>
-        <div class="opening_hours">
-          <h3>opening hours</h3>
-          <p><b>Mon-Thu:</b> 7:00am-8:00pm <br> <b>Fri-Sun:</b> 7:00am-10:00pm</p>
-          <div class="pay_cards flex">
-              <div>
-                <img src="images/sprites.png" class="card1" alt="card1">
-              </div>
-              <div>
-                <img src="images/sprites.png" class="paypal" alt="pay_pal">
-              </div>
-              <div>
-                <img src="images/sprites.png" class="visa" alt="visa">
-              </div>
-              <div>
-                <img src="images/sprites.png" class="card4" alt="card4">
-              </div>
-          </div>
-        </div>
-        <div class="our_location">
-          <h3>our location</h3>
-          <p>19th Paradise Street Sitia <br> 128 Meserole Avenue</p>
-          <div class="sotials flex">
-            <a href="#">
-              <img src="images/sprites.png" class="twitter" alt="twitter">
-            </a>
-            <a href="#">
-              <img src="images/sprites.png" class="youtube" alt="youtube">
-            </a>
-            <a href="#">
-              <img src="images/sprites.png" class="facebook" alt="facebook">
-            </a>
-            <a href="#">
-              <img src="images/sprites.png" class="something_network" alt="something_network">
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>

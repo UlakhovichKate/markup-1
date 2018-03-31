@@ -20,6 +20,9 @@ body{
   background-color: #fff;
   background-image: url('../images/pattern.png');
 }
+.wrapper{
+  min-height: calc(100vh - 70px);
+}
 .container{
   max-width: 1200px;
   margin:auto;
@@ -104,9 +107,13 @@ li{
 header .navigation{
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
 }
+.navigation .container{
+  justify-content: space-between;
+}
 .logo{
   display: flex;
   align-items: center;
+  margin-right: 190px;
 }
 nav li{
   border-top: 3px solid rgba(0,0,0,0);
@@ -117,8 +124,12 @@ header .promo .container{
 nav ul{
   width:720px;
 }
-nav li, .logo img, .sotials, .pay_cards{
+nav a, .logo img, .sotials, .pay_cards{
   padding: 45px 0;
+}
+nav a{
+  height: 100%;
+  display: block;
 }
 header .sotials{
   width: 100px;
@@ -163,14 +174,27 @@ header{
 }
 .buttons div{
   width: 225px;
-  height: 55px;
   opacity: 0.7;
+  overflow: hidden;
 }
 .buttons a{
   display: block;
   color:#fff;
   width: 100%;
   height: 100%;
+  padding: 20px 0;
+  margin: auto;
+  font-family: 'open-sans';
+}
+.booking:hover{
+  background-color: #000;
+}
+.see_menu:hover{
+  background-color: #ccc;
+  color: #000;
+}
+.see_menu a:hover{
+  color: #000;
 }
 .booking{
   background-color: rgba(0,0,0,0.5);
@@ -239,16 +263,19 @@ header{
 }
 .menu_theme{
   width: 440px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .menu_theme p{
   text-align: left;
-  padding: 10px 0 30px;
+  padding:  0 ;
 }
 .dish_name{
   border-bottom: 1px solid #cc9900;
   justify-content: space-between;
+}
+.dish_all{
   position: relative;
+  margin-bottom: 35px;
 }
 .menu h3, .menu span{
   padding: 0 0 10px;
@@ -279,7 +306,8 @@ header{
   padding: 80px 75px 100px;
   background-color: rgba(0,0,0,0.8);
   color: #fff;
-  margin: auto;
+  margin: 0 auto 20px;
+  position: relative;
 }
 .inf_block p{
   font-size: 25px;
@@ -287,7 +315,32 @@ header{
   font-family: 'Gentium-Basic';
   color: #dde0df;
 }
+blockquote{
+  margin: 0;
+}
+blockquote p{
+  margin-bottom: 30px;
+}
+blockquote::before {
+content: "\201C";
+font-family: serif;
+position: absolute;
+left: 30px;
+top: 150px;
+color: white;
+font-size: 80px;
+line-height: 1.35;
+text-align: center;
+}
+cite{
+  font-family: 'open-sans';
+  font-style: normal;
+  font-size: 17px;
+}
 /****************************************************** reserved*/
+.reservation .container{
+  margin-bottom: 30px;
+}
 .info_reserved{
   width: 435px;
 }
@@ -298,21 +351,24 @@ form label{
   display: block;
   color: #cc9900;
   font-weight: 700;
-  margin: 30px 0 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
   font-family: 'open-sans';
 }
 form .flex{
   text-align: left;
   flex-wrap: wrap;
   justify-content: space-between!important;
+  margin-top: 30px;
 }
 .input_form input{
   width: 170px;
-  height: 35px;
+  height: 30px;
   border: 1px solid #ccc;
   font-style: italic;
   padding-left: 15px;
   color: #888;
+  margin-bottom: 25px;
 }
 .input_form select{
   width: 185px;
@@ -322,7 +378,7 @@ form .flex{
   padding-left: 15px;
   color: #888;
 }
-.input_form input:hover, .input_form select:hover{
+.input_form input:hover, .input_form select:hover, .input_form input:focus, .input_form select:focus{
   border: 1px solid #cc9900;
 }
 .button{
@@ -333,7 +389,7 @@ form .flex{
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .button:hover{
   background-color: #ccc;
@@ -348,12 +404,19 @@ footer{
   background-color: #191919;
   color: #fff;
   padding: 60px 0 80px;
+  height: 200px;
 }
 footer h3{
   text-transform: capitalize;
 }
 .about_us{
   max-width: 350px;
+}
+.opening_hours{
+  width: 300px;
+}
+.our_location{
+  width: 350px;
 }
 footer .sotials{
   width: 100px;
@@ -375,9 +438,16 @@ footer .youtube{
 footer .something_network{
   left: -90px;
 }
+.facebook:hover, .twitter:hover, .youtube:hover, .something_network:hover{
+  transform: scale(1.05);
+}
 .pay_cards img{
   position: relative;
   top: -15px;
+}
+.pay_cards{
+  width: 120px;
+  margin: auto;
 }
 .card1{
   left: -20px;
